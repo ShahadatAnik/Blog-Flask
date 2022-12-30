@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/create">Create</a>
+        </nav>
+        <h1>Search blog</h1>
+        <form method="POST">
+            <input
+                type="text"
+                name="title"
+                class="form-control border-warning border-5"
+                placeholder="title"
+                required
+            />
+            <button type="submit">Search</button>
+        </form>
+        <br />
+        <br />
+
+        <h1>Blogs</h1>
+        {% for blog in result %}
+        <div style="border: 1px solid black; padding: 10px; border-radius: 5px">
+            <a href="/details/{{blog['title']}}" style="text-decoration: none">
+                <h1>{{blog['title']}}</h1>
+
+                <a href="/update/{{blog['title']}}">Update</a>
+                <a href="/delete/{{blog['title']}}">Delete</a>
+            </a>
+        </div>
+        <br />
+        <br />
+        {% endfor %}
+    </body>
+</html>

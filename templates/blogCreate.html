@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <h1>Post your blog</h1>
+        <form method="POST">
+            <input
+                type="text"
+                name="title"
+                class="form-control border-warning border-5"
+                placeholder="title"
+                required
+            />
+            <input
+                type="text"
+                name="body"
+                class="form-control border-warning border-5"
+                placeholder="body"
+                required
+            />
+            <button type="submit">Post</button>
+        </form>
+        <br />
+        <br />
+        {% if error %}
+        <h3>{{error}}</h3>
+        {% endif %}
+    </body>
+</html>
