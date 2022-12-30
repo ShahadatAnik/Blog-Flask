@@ -2,13 +2,13 @@
 
 ## First time
 
-| Event                            | Code                                                          |
-| -------------------------------- | ------------------------------------------------------------- |
-| Clone the repository             | `https://github.com/ShahadatAnik/BloodBucket-flask-mongo.git` |
-| Create a virtual environment     | `python -m venv venvBlogFlask`                                |
-| Activate the virtual environment | `.\venvBlogFlask\Scripts\activate`                            |
-| Install the requirements         | `pip install -r requirements.txt`                             |
-| Run the app                      | `python app.py`                                               |
+| Event                            | Code                                             |
+| -------------------------------- | ------------------------------------------------ |
+| Clone the repository             | `https://github.com/ShahadatAnik/Blog-Flask.git` |
+| Create a virtual environment     | `python -m venv venvBlogFlask`                   |
+| Activate the virtual environment | `.\venvBlogFlask\Scripts\activate`               |
+| Install the requirements         | `pip install -r requirements.txt`                |
+| Run the app                      | `python app.py`                                  |
 
 ## After the first time
 
