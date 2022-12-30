@@ -46,7 +46,7 @@ def blogCreate():
             return redirect("/", code=302)
         else:
             return render_template("blogCreate.html", error="Please fill all the fields")
-    return render_template("blogCreate.html")
+    return render_template("blogCreate.html", error="")
 
 
 @app.route("/update/<title>", methods=["GET", "POST"])
